@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Свойства CSS</title>
+    <meta charset="UTF-8">
+    <style>
+        p 
+		{
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        .text-head 
+		{
+            font-family: sans-serif;
+            font-size: 20px;
+            margin: 1em 1em 1em 11em;
+        }
+        .image-wrapper 
+		{
+            display: inline-block;
+            border-radius: 15%;        /* радиус скругления углов рамки */
+            border: 2px solid #C0C0C0; /* параметры рамки */
+            background: #F5F5F5;       /* цвет фона */
+            margin: 5px;               /* отступы вокруг */
+            max-width: 120px;
+            text-align: center;
+			padding-top: 20px;         /* отступ сверху */
+        }
+        .image 
+		{
+            display: block;
+            max-width: 70%;
+			margin: auto;               /* отступы вокруг */
+        }
+        .caption 
+		{
+            font-family: sans-serif;
+            font-size: 13px;
+            padding: 5px;
+			font-weight: bold;
+			margin: 10px;               /* отступы вокруг */
+			padding-top: 20px;         /* отступ сверху */
+        }
+    </style>
+</head>
+
+<body bgcolor="#F5F5F5">
+    <h1 class="text-head">What do I have in my fridge?</h1>
+    <div class="wrap">
+        <div class="image-wrapper">
+            <img class="image" src="https://cdn.icon-icons.com/icons2/1301/PNG/512/if-food-c247-2427884_85682.png" alt="pepper">
+            <div class="caption">Pepper</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c240-2427880_85675.png" alt="apple">
+            <div class="caption">Apple</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c217-2427859_85693.png" alt="cheese">
+            <div class="caption">Cheese</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c245-2427889_85690.png" alt="corn">
+            <div class="caption">Corn</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c239-2427893_85707.png" alt="mushroom">
+            <div class="caption">Mushroom</div>
+        </div><br>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c238-2427878_85676.png" alt="garlic">
+            <div class="caption">Garlic</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://cdn-icons-png.flaticon.com/512/2541/2541030.png" alt="beef">
+            <div class="caption">Beef</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/1301/PNG/512/if-food-c205-2427851_85705.png" alt="fish">
+            <div class="caption">Fish</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://icon-icons.com/icons2/568/PNG/512/eggs_icon-icons.com_54431.png" alt="eggs">
+            <div class="caption">Eggs</div>
+        </div>
+        <div class="image-wrapper">
+            <img class="image" src="https://cdn-icons-png.flaticon.com/512/6108/6108966.png" alt="coriander">
+            <div class="caption">Coriander</div>
+        </div>
+        <hr noshade size="1" width="690px" align="left">
+        <p style="margin: 1em 1em 1em 16em"><b>... that's all ...</b></p>
+		
+		<p class="caption">&#169; 2024 Klimov M.A.</p>
+    </div>
+</body>
+</html>
