@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Список задач</title>
+		<meta charset="UTF-8">
+		<style>
+		
+		.divbackground
+		{
+		background: LightGrey;
+		padding: 15px;
+		}
+		
+		.text-head
+		{
+		font-family: sans-serif;
+		font-size: 28px;
+		background: LightGrey;	
+		margin: 0 0 15px 0;		
+		}
+		
+		ul
+		{
+		font-family: sans-serif;
+		margin: 0px;
+		padding: 0px;
+		list-style-position: inside;
+		}
+				
+		ul li:nth-child(odd):not(.custom-marker-checked) 
+		{
+        background: LightBlue;
+		}
+
+        ul li:nth-child(even):not(.custom-marker-checked) 
+		{
+        background: SkyBlue;
+        }
+		
+		.custom-marker-checked
+		{
+		list-style-image: url(checked_16.png);
+		background: DarkGrey;
+		padding: 10px 15px 10px 25px;
+		}
+		
+		.line-through
+		{
+		font-size: 15px;
+		text-decoration: line-through;
+		padding: 10px 15px 10px 25px;
+		}
+		
+		.custom-marker-unchecked
+		{
+		list-style-image: url(unchecked_16.png);
+		padding: 10px 15px 10px 25px;
+		}
+		
+		.remove 
+		{
+        color: red;
+        margin-left: 10px;
+		padding: 10px 15px 10px 25px;
+        }
+		
+		.text-padding
+		{
+		font-size: 15px;
+		padding: 10px 15px 10px 25px;
+		}
+		</style>
+	</head>
+		<body>
+			<div class="divbackground">
+				<h1 class="text-head">My To Do List</h1>
+					<ul>
+						<li class="custom-marker-unchecked"><span class="text-padding">Hit the gym</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-checked"><span class="line-through" >Pay bills</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Meet John</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Buy eggs</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-checked"><span class="line-through">Read a book</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Organize office</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Eat dinner</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Buy apples</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Meet George</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Feed the cat</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-checked"><span class="line-through">Write a letter</span><span class="remove">&#10006;</span></li>
+						<li class="custom-marker-unchecked"><span class="text-padding">Run 1 km</span><span class="remove">&#10006;</span></li>
+					</ul>
+			</div>
+		</body>
+</html>
