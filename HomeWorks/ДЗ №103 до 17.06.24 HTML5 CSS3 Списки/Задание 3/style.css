@@ -1,0 +1,49 @@
+.div
+{
+background-color: Gainsboro;
+font-family: Arial, Helvetica, sans-serif;
+padding: 0 0 50px 0;
+}
+		
+#head
+{
+font-size: 20px;
+padding: 50px 0 10px 15px
+}
+		
+.text_interval
+{
+line-height: 1.5;
+letter-spacing: 0.05em;
+}
+		
+.text_bold
+{
+font-weight: bold;		
+}
+		
+.text_color1
+{
+color: Gray;		
+}
+		
+.text_color2
+{
+color: Indigo;	
+}
+
+p
+{
+padding: 0 0 0 15px
+}
+
+dt
+{
+font-style: italic;	
+padding: 10px 0 20px 15px
+}
+
+dd
+{
+padding: 0 0 0 35px
+}
