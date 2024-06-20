@@ -1,0 +1,29 @@
+.vertical-menu 
+{
+  width: 200px;
+  background-color: DarkGrey;
+}
+
+.vertical-menu a 
+{
+  color: white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover 
+{
+  background-color: #696969;
+}
+
+/* Стили для иконок */
+.icon 
+{
+  margin-right: 30px;
+ 
+}
+img
+{
+width: 20px;
+}
