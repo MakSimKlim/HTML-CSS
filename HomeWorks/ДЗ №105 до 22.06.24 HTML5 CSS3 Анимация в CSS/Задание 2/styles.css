@@ -1,0 +1,86 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            perspective: 1000px; /* Добавляет перспективу */
+            display: flex;
+            position: relative;
+        }
+
+        .door {
+            width: 300px; /* Ширина в 1.5 раза больше высоты */
+            height: 200px;
+            background-color: purple;
+            border: 5px solid #4B0082; /* Темный пурпурный контур */
+            transition: transform 2s; /* Плавный переход для анимации */
+            position: relative;
+            z-index: 2; /* Двери поверх текста */
+        }
+
+        .left-door {
+            transform-origin: left; /* Устанавливает точку поворота для левой створки */
+        }
+
+        .right-door {
+            transform-origin: right; /* Устанавливает точку поворота для правой створки */
+        }
+
+        .container:hover .left-door {
+            transform: rotateY(60deg); /* Поворачивает элемент на 60 градусов по часовой стрелке */
+        }
+
+        .container:hover .right-door {
+            transform: rotateY(-60deg); /* Поворачивает элемент на -60 градусов против часовой стрелки */
+        }
+
+        .container:not(:hover) .left-door,
+        .container:not(:hover) .right-door {
+            transition: transform 0s; /* Резкий переход для закрытия */
+        }
+
+        .text {
+		    font-family: sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            opacity: 0; /* Изначально текст скрыт */
+            transition: opacity 6s; /* Плавный переход для изменения прозрачности */
+            z-index: 1; /* Текст за дверями */
+        }
+
+        .container:hover .text {
+            animation: fadeIn 2s forwards;
+        }
+
+        .container:not(:hover) .text {
+            animation: fadeOut 0.1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
