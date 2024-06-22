@@ -1,0 +1,45 @@
+body 
+{
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+}
+
+table 
+{
+width: 60%;/* Общая ширина таблицы */
+border-collapse: collapse;/* Объединяет границы ячеек таблицы */
+margin: 20px 0 0 20px;/* Центрирует таблицу с отступами*/
+background-color: #f2f2f2;/* Цвет фона таблицы */
+
+}
+
+th, td 
+{
+padding: 12px;/* Внутренние отступы ячеек */
+text-align: center;/* Выравнивание текста по центру */
+width: 16.66%; /* Каждая ячейка занимает одинаковую долю ширины таблицы */
+
+}
+        
+th 
+{
+background-color: #42ddf5;/* Цвет фона заголовков таблицы */
+font-weight: bold; /* Жирный текст для заголовков */
+}
+
+td:first-child 
+{
+background-color: #42ddf5; /* Цвет фона первого столбца таблицы */
+font-weight: bold; /* Жирный текст для первого столбца */
+}
+
+tr:nth-child(even) 
+{
+background-color: #e9e9e9;/* Цвет фона четных строк таблицы */
+}
+
+td:not(:first-child) 
+{
+color: gray; /* Цвет текста серый для всех ячеек, кроме первого столбца */
+}
+

@@ -1,0 +1,46 @@
+body
+{
+background-color: lightgray;
+font-family: Arial, sans-serif;
+}
+
+.block 
+{
+
+display: flex;
+height: 200px; /* Фиксированная высота блока */
+width: 1000px; /* Фиксированная ширина блока */
+overflow: hidden; /* Скрытие содержимого, выходящего за пределы блока */
+transition: background-color 0.3s, transform 1s; /* Плавные переходы */
+}
+        
+.darker 
+{ /* Класс "darker" для третьего блока */
+background-color: rgba(0, 0, 0, 0.7);
+}
+		
+.text 
+{
+flex: 1; /* Деление доступной ширины поровну */
+display: flex;
+align-items: center; /* Выравнивание текста по центру */
+justify-content: center;
+}
+		
+.image 
+{
+flex: 1; /* Деление доступной ширины поровну */
+background-image: url('veselchakU.jpg'); /* Замените на свою картинку */
+background-size: cover; /* Заполнение всей своей части */
+background-position: center;
+filter: brightness(1.5); /* Увеличение яркости картинки */
+}
+
+.imagedark
+{
+flex: 1; /* Деление доступной ширины поровну */
+background-image: url('veselchakU.jpg'); /* Замените на свою картинку */
+background-size: cover; /* Заполнение всей своей части */
+background-position: center;
+filter: brightness(0.7); /* Уменьшение яркости картинки */
+}
