@@ -1,0 +1,73 @@
+body
+{
+background-color: lightgray;
+font-family: Arial, sans-serif;
+}
+/* Стили для контейнера */
+.container 
+{
+display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+
+/* Стили для блоков плана подписки */
+.plan 
+{
+background-color: white ;
+border: 1px solid #ddd;
+border-radius: 15px;
+width: 300px;
+padding: 20px;
+box-shadow: 0 20px 20px 0 rgba(0,0,0,0.5);
+text-align: center;
+transition: transform 1s;/* Плавное увеличение блока при наведении */
+}
+
+/* Увеличиваем блок на 15% при наведении */
+.plan:hover 
+{
+transform: scale(1.15);
+}
+
+/* Стили для заголовка плана подписки */
+.plan h2 
+{
+color: #4CAF50;
+}
+
+/* Стили для цены плана подписки */
+.plan h3 
+{
+font-size: 22px;
+color: #666;
+}
+
+/* Стили для списка особенностей плана подписки */
+.plan ul 
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+color: #666;
+}
+
+/* Стили для кнопки подписки */
+.plan button 
+{
+color: #fff;
+background-color: #4CAF50;
+padding: 10px 20px;
+margin: 20px 0;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+}
+
+/* Стили для кнопки подписки при наведении */
+.plan button:hover 
+{
+background-color: #45a049;
+}
+
