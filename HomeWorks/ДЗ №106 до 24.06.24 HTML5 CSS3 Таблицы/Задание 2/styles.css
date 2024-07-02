@@ -12,6 +12,8 @@ height: 200px; /* Фиксированная высота блока */
 width: 1000px; /* Фиксированная ширина блока */
 overflow: hidden; /* Скрытие содержимого, выходящего за пределы блока */
 transition: background-color 0.3s, transform 1s; /* Плавные переходы */
+position: relative;
+overflow: hidden;
 }
         
 .darker 
@@ -30,10 +32,23 @@ justify-content: center;
 .image 
 {
 flex: 1; /* Деление доступной ширины поровну */
-background-image: url('veselchakU.jpg'); /* Замените на свою картинку */
+background-image: url('veselchakU.jpg'); 
 background-size: cover; /* Заполнение всей своей части */
 background-position: center;
 filter: brightness(1.5); /* Увеличение яркости картинки */
+transition: transform 1s;
+transform-origin: left center;
+}
+
+.image-left
+{
+flex: 1; /* Деление доступной ширины поровну */
+background-image: url('veselchakU.jpg'); 
+background-size: cover; /* Заполнение всей своей части */
+background-position: center;
+filter: brightness(1.5); /* Увеличение яркости картинки */
+transition: transform 1s;
+transform-origin: right center;
 }
 
 .imagedark
@@ -43,4 +58,30 @@ background-image: url('veselchakU.jpg'); /* Замените на свою ка�
 background-size: cover; /* Заполнение всей своей части */
 background-position: center;
 filter: brightness(0.7); /* Уменьшение яркости картинки */
+transition: transform 1s;
+transform-origin: left center;
+}
+
+.block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.block:hover::after {
+    opacity: 1;
+}
+
+.image, .imagedark {
+    transition: transform 1s;
+}
+
+.block:hover .image-left, .block:hover .image, .block:hover .imagedark {
+    transform: scale(1.1);
 }
